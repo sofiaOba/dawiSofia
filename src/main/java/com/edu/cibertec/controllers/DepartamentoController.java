@@ -20,7 +20,7 @@ import com.edu.cibertec.repository.DepartamentoRepository;
 @RequestMapping(path="/api")
 public class DepartamentoController {
 
-	
+	//
 	//1.-Instanciar por unica vez nuestro Repositorio
 	//lo instancia por unica vez IMPORTANTE Autowired ojooo
 	@Autowired
@@ -66,5 +66,10 @@ public class DepartamentoController {
 	public List<Departamento>obtenerDepartamentosxNombre(@PathVariable("nombre") String nombre){
 		return repository.findByNombre(nombre);
 	}
+	
+	
+	//modificacion en el codigo aqui
+	
+	
 	
 }//fin
